@@ -1,0 +1,70 @@
+<html>
+    <head>
+
+        <title>mytest</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script type="text/javascript" src="./lib/config.js"></script>
+        <script type="text/javascript" src="./lib/login.js"></script>
+        <script type="text/javascript" src="./lib/user-info.js"></script>
+        <script type="text/javascript" src="./lib/group-bucket.js"></script>
+        <script type="text/javascript" src="./lib/group-member.js"></script>
+        <script type="text/javascript" src="./lib/data-upload.js"></script>
+
+        <script type="text/javascript" src="list-page-promise.js"></script>
+
+
+
+        <link rel="stylesheet" href="hellokii.css" />
+
+
+    </head>
+
+    <body>
+        <div class="app-header">
+            Application
+        </div>
+
+        <div id="login-page" class="app-body">
+            <div class="input-group">
+                Enter a Username:<br>
+                <input id="username-field" type="text" value="" class="text-edit"/>
+            </div>
+            <div class="input-group">
+                Enter a Password:<br>
+                <input id="password-field" type="password" value="" class="text-edit"/>
+            </div>
+            <div class="input-group">
+                <a id="login-button" href="javascript:fncLogin()" class="button">Login</a>                
+            </div>
+        </div>
+
+
+
+        <div id="top-page" class="app-body" style="display: none">
+            <div class="input-group">
+                <a id="user-info-button" href="javascript:fncUserInfo()" class="button">UserInfo</a>
+            </div>
+            <ul id="user-info-view" class="user-info-view"></ul>
+            <div class="input-group">
+                <a id="group-bucket-button" href="javascript:fncGroupBucket()" class="button">GroupBucket</a>
+            </div>
+            <ul id="group-bucket-view" class="group-bucket-view"></ul>
+            <div class="input-group">
+                <a id="group-member-button" href="javascript:fncGroupMember()" class="button">GroupMember</a>
+            </div>
+            <ul id="group-member-view" class="group-member-view"></ul>
+            <div class="input-group">
+                <a id="data-upload-button" href="javascript:fncDataUpload()" class="button">DataUpload</a>
+            </div>
+            <ul id="data-upload-view" class="data-upload-view"></ul>
+
+
+
+
+
+        </div>
+
+    </body>
+
+</html>
