@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>leaflet-map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link href="./leaflet.css" rel="stylesheet">
+    <script src="./leaflet.js"></script>
+    <script type="text/javascript" src="./lib/disp-geo-location.js"></script>
+    <script type="text/javascript" src="./lib/get-geo-location.js"></script>
+    <script type="text/javascript" src="./lib/config.js"></script>
+
+    <style>
+    body { margin:0; padding:0; }
+    #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+    </style>
+  </head>
+  <body>
+
+
+    <!-- Display the map and title with HTML division tags  -->
+    <div id="map"></div>
+
+    <!-- Create the interactive map content with JavaScript (.js) -->
+    <script>
+      appConfig = JSON.parse(sessionStorage.getItem('acfg'));
+      userConfig = JSON.parse(sessionStorage.getItem('ucfg'));
+
+      fncGetGeoLocation();
+      //fncDispGeoLocation();
+    /* Set up the initial map center and zoom level */
+    //var map = L.map('map', {
+    //  center: [35.021041, 135.7556075], // EDIT latitude, longitude to re-center map
+    // zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    //  scrollWheelZoom: false
+    //});
+    </script>
+  </body>
+</html>
